@@ -38,7 +38,12 @@ const InputTextValidation = (props) => {
 InputTextValidation.propTypes = {
   placeholder: PropTypes.string,
   onInputChange: PropTypes.func,
-  onValidation: PropTypes.func,
+  onValidation: PropTypes.func.isRequired,
+};
+
+InputTextValidation.defaultProps = {
+  placeholder: '',
+  onInputChange: () => null,
 };
 
 export default InputTextValidation;

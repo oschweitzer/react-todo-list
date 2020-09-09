@@ -16,4 +16,8 @@ ColumnContainer.propTypes = {
   addBorder: PropTypes.bool,
 };
 
+ColumnContainer.defaultProps = {
+  addBorder: false,
+};
+
 export default ColumnContainer;

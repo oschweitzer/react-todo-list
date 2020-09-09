@@ -35,9 +35,14 @@ const TodoItem = (props) => {
 };
 
 TodoItem.propTypes = {
-  description: PropTypes.string,
+  description: PropTypes.string.isRequired,
   onTodoItemCreation: PropTypes.func,
   editionMode: PropTypes.bool,
+};
+
+TodoItem.defaultProps = {
+  onTodoItemCreation: () => null,
+  editionMode: false,
 };
 
 export default TodoItem;

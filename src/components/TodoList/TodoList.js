@@ -45,7 +45,7 @@ const TodoList = () => {
       <div>
         <h3>{title}</h3>
         <TodoItem
-          editionMode={true}
+          editionMode
           onTodoItemCreation={onTodoItemCreation}
         ></TodoItem>
         {items.map((item) => (
@@ -60,7 +60,7 @@ const TodoList = () => {
   }
 
   return (
-    <ColumnContainer addBorder={true}>
+    <ColumnContainer addBorder>
       {inputTextComponent}
       {list}
     </ColumnContainer>

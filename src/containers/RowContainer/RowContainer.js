@@ -13,4 +13,8 @@ RowContainer.propTypes = {
   wrap: PropTypes.bool,
 };
 
+RowContainer.defaultProps = {
+  wrap: false,
+};
+
 export default RowContainer;
