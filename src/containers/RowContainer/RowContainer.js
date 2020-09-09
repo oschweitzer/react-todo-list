@@ -4,17 +4,19 @@ import { PropTypes } from 'prop-types';
 const RowContainer = styled.div`
   margin-top: 5%;
   display: flex;
-  justify-content: center;
+  justify-content: ${(props) => props.justifyContent};
   align-items: center;
-  flex-wrap: ${(props) => (props.wrap ? 'wrap' : 'nowrap')};
+  flex-wrap: ${(props) => (props.flexWrap ? 'wrap' : 'nowrap')};
 `;
 
 RowContainer.propTypes = {
-  wrap: PropTypes.bool,
+  flexWrap: PropTypes.bool,
+  justifyContent: PropTypes.string,
 };
 
 RowContainer.defaultProps = {
-  wrap: false,
+  flexWrap: false,
+  justifyContent: 'center',
 };
 
 export default RowContainer;

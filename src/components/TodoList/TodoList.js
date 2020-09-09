@@ -3,8 +3,12 @@ import InputTextValidation from '../InputTextValidation/InputTextValidation';
 import TodoItem from '../TodoItem/TodoItem';
 import { formatTitle } from '../../utils/Utils';
 import ColumnContainer from '../../containers/ColumnContainer/ColumnContainer';
+import IconButton from '../IconButton/IconButton';
+import { FaTimes } from 'react-icons/fa';
+import RowContainer from '../../containers/RowContainer/RowContainer';
+import { PropTypes } from 'prop-types';
 
-const TodoList = () => {
+const TodoList = (props) => {
   // --------------- State --------------------
   const [title, setTitle] = useState('');
   const [items, setItems] = useState([]);
@@ -61,10 +65,23 @@ const TodoList = () => {
 
   return (
     <ColumnContainer addBorder>
+      <RowContainer justifyContent={'flex-end'}>
+        <IconButton
+          title={'Remove todo list'}
+          onClick={() => props.onRemoveList(props.listId)}
+        >
+          <FaTimes color={'red'} />
+        </IconButton>
+      </RowContainer>
       {inputTextComponent}
       {list}
     </ColumnContainer>
   );
+};
+
+TodoList.propTypes = {
+  listId: PropTypes.string.isRequired,
+  onRemoveList: PropTypes.func.isRequired,
 };
 
 export default TodoList;

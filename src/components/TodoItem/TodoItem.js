@@ -35,12 +35,13 @@ const TodoItem = (props) => {
 };
 
 TodoItem.propTypes = {
-  description: PropTypes.string.isRequired,
+  description: PropTypes.string,
   onTodoItemCreation: PropTypes.func,
   editionMode: PropTypes.bool,
 };
 
 TodoItem.defaultProps = {
+  description: '',
   onTodoItemCreation: () => null,
   editionMode: false,
 };

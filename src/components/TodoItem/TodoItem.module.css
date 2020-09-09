@@ -10,3 +10,8 @@
   text-decoration: line-through;
   color: #cccccc;
 }
+
+.right-alignment {
+  display: flex;
+  justify-content: flex-end;
+}
