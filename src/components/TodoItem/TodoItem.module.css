@@ -1,0 +1,17 @@
+.todo-item {
+  display: flex;
+  margin-bottom: 5%;
+  margin-top: 5%;
+  justify-content: space-between;
+  color: #444444;
+}
+
+.line {
+  text-decoration: line-through;
+  color: #cccccc;
+}
+
+.right-alignment {
+  display: flex;
+  justify-content: flex-end;
+}

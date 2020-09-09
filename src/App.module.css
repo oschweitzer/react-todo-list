@@ -1,0 +1,19 @@
+.app {
+  display: flex;
+  flex-direction: column;
+}
+
+.todo-list-creation-button {
+  border: none;
+  background-color: #f4a261;
+  border-radius: 3px;
+  padding: 1%;
+  width: 10%;
+  outline: none;
+  font-weight: bold;
+}
+
+.todo-list-creation-button:hover {
+  background-color: #2a9d8f;
+  color: white;
+}
