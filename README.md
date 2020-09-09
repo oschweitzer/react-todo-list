@@ -6,6 +6,9 @@ This application developed with ReactJS, is a simple todo list app that allows y
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+[![Youtube video link](https://img.youtube.com/vi/j6EyC7eV_ZU/0.jpg)](https://youtu.be/j6EyC7eV_ZU)
+
+
 ## Available Scripts
 
 In the project directory, you can run:
